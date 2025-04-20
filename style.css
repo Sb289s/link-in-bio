@@ -1,44 +1,125 @@
+/* === Base === */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #000;
+    color: #fff;
   }
   
-  .container {
+  /* === Layout Wrapper === */
+  .wrapper {
+    padding: 2rem 1.2rem;
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
+    text-align: center;
   }
   
-  .profile-pic {
-    width: 150px;
-    border-radius: 50%;
+  /* === Branding === */
+  .brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.2rem;
   }
   
-  h1 {
-    margin-top: 10px;
+  /* === Hero Text === */
+  .hero {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 2rem;
   }
   
-  .link-button {
+  /* === Socials === */
+  .socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .pill {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 10px;
+    gap: 0.5rem;
+    background: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
     text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s;
+    color: #fff;
+    transition: background 0.3s ease;
   }
   
-  .link-button img {
-    width: 24px;
-    margin-right: 10px;
+  .pill img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: invert(1);
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .link-button:hover {
-    background-color: #f0f0f0;
+  .pill:hover img {
+    filter: invert(1) drop-shadow(0 0 3px #fff);
+  }
+  
+  /* === Link Cards === */
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    background: #121212;
+    border-radius: 14px;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .card:hover {
+    background: #1f1f1f;
+  }
+  
+  .card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    object-fit: contain;
+    filter: invert(1);
+  }
+  
+  .card .info {
+    text-align: left;
+    flex-grow: 1;
+  }
+  
+  .card .info h3 {
+    font-size: 1rem;
+    margin: 0 0 0.2rem 0;
+  }
+  
+  .card .info p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: #ccc;
+  }
+  
+  .arrow {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
+  /* === Footer === */
+  footer {
+    margin-top: 3rem;
+    font-size: 0.75rem;
+    color: #666;
   }
   
